@@ -28,6 +28,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'python-rope/ropevim'
+Plugin 'Raimondi/delimitMate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -41,7 +42,6 @@ set laststatus=2
 set wildignore=*.pyc,.DS_Store,*.id
 set showmatch
 colorscheme lucius
-let g:rainbow_active=1
 " Search
 set incsearch
 set hlsearch
@@ -80,6 +80,9 @@ map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
+" more natural splits by default
+set splitbelow
+set splitright
 
 " tags
 set tags=~/makespace/site/.tags
@@ -152,3 +155,9 @@ let g:syntastic_python_checkers = ['flake8']
 let g:autopep8_max_line_length=159
 autocmd FileType python map <buffer> <leader>8 :call Autopep8()<CR>
 let g:autopep8_disable_show_diff=0
+
+" rainbow settings
+let g:rainbow_active=1
+
+" youcompleteme settings
+let g:ycm_key_list_select_completion = ['<Enter>', '<Down>']
