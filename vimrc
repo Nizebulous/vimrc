@@ -9,6 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'wincent/Command-T'
@@ -26,6 +27,7 @@ Plugin 'blueyed/vim-diminactive'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tell-k/vim-autopep8'
+Plugin 'python-rope/ropevim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
