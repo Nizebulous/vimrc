@@ -13,14 +13,15 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'wincent/Command-T'
-Plugin 'klen/python-mode'
+Plugin 'scrooloose/syntastic'
+Plugin 'tell-k/vim-autopep8'
 Plugin 'rking/ag.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'blueyed/vim-diminactive'
 Plugin 'luochen1990/rainbow'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
-Plugin 'xolox/vim-easytags'
+Plugin 'Valloric/YouCompleteMe'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -118,14 +119,7 @@ endfunction
 
 " CommandT options
 let g:CommandTFileScanner="git"
-unmap <leader>t
 noremap <leader>d :CommandT<cr>
-" python-mode options
-let g:pymode_lint_ignore = "W"
-let g:pymode_options_max_line_length = 159
-let g:pymode_lint_cwindow = 0
-let g:pymode_options_colorcolumn = 0
-noremap <leader>8 :PymodeLintAuto<cr>
 
 " airline options
 let g:airline#extensions#tabline#enabled = 1
@@ -136,7 +130,17 @@ let g:session_autoload='yes'
 let g:session_autosave='yes'
 let g:session_autosave_periodic=5
 
-" easytags options
-let g:easytags_syntax_keyword = 'always'
-let g:easytags_async=1
-:let g:easytags_auto_highlight = 0
+" diminactive options
+let g:diminactive_use_syntax = 1
+
+" syntastic options
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_flake8_args = "--max-line-length=160"
+let g:syntastic_python_checkers = ['flake8']
+" autopep8
+let g:autopep8_max_line_length=159
+autocmd FileType python map <buffer> <leader>8 :call Autopep8()<CR>
+let g:autopep8_disable_show_diff=0
