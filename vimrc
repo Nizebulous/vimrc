@@ -18,6 +18,9 @@ Plugin 'rking/ag.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'blueyed/vim-diminactive'
 Plugin 'luochen1990/rainbow'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
+Plugin 'xolox/vim-easytags'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -34,7 +37,7 @@ let g:rainbow_active=1
 " Search
 set incsearch
 set hlsearch
- 
+
 " Behavior
 set wildmenu
 set wildmode=longest,full
@@ -115,15 +118,25 @@ endfunction
 
 " CommandT options
 let g:CommandTFileScanner="git"
-
+unmap <leader>t
+noremap <leader>d :CommandT<cr>
 " python-mode options
 let g:pymode_lint_ignore = "W"
 let g:pymode_options_max_line_length = 159
 let g:pymode_lint_cwindow = 0
 let g:pymode_options_colorcolumn = 0
-noremap <leader> :PymodeLintAuto<cr>
+noremap <leader>8 :PymodeLintAuto<cr>
 
 " airline options
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'luna'
 
+" vim-session options
+let g:session_autoload='yes'
+let g:session_autosave='yes'
+let g:session_autosave_periodic=5
+
+" easytags options
+let g:easytags_syntax_keyword = 'always'
+let g:easytags_async=1
+:let g:easytags_auto_highlight = 0

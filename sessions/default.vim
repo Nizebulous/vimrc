@@ -1,0 +1,219 @@
+" ~/.vim/sessions/default.vim:
+" Vim session script.
+" Created by session.vim 2.10.1 on 22 April 2015 at 15:11:58.
+" Open this file in Vim and run :source % to restore your session.
+
+if exists('g:syntax_on') != 1 | syntax on | endif
+if exists('g:did_load_filetypes') != 1 | filetype on | endif
+if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
+if exists('g:did_indent_on') != 1 | filetype indent on | endif
+if &background != 'dark'
+	set background=dark
+endif
+if !exists('g:colors_name') || g:colors_name != 'lucius' | colorscheme lucius | endif
+call setqflist([])
+let SessionLoad = 1
+if &cp | set nocp | endif
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let v:this_session=expand("<sfile>:p")
+silent only
+cd ~/makespace/site
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+set shortmess=aoO
+badd +121 ~/.vim/vimrc
+badd +16 \[Vundle]\ Installer
+badd +33 ~/makespace/ansible_dev/site_deploy/roles/provision/files/conf/nginx.conf
+badd +1 ~/makespace/ansible_dev/site_deploy/makespace_provision.yml
+badd +1 ~/makespace/ansible_dev/build_a_box/builder_box.yml
+badd +27 mksp/apps/logistics/models/shipments.py
+badd +19 mksp/static/js/api/Account.js
+badd +27 mksp/apps/users/apis/bookings.py
+badd +3 .gitignore
+badd +2 \[Vundle]\ list
+badd +15 mksp/apps/logistics/apis/addresses.py
+badd +19 mksp/apps/users/apis/users.py
+badd +5 mksp/apps/logistics/apis/containers.py
+badd +407 ~/.vim/bundle/vim-easytags/doc/easytags.txt
+badd +58 mksp/services/api2/exceptions.py
+badd +81 mksp/apps/logistics/apis/fulfillers.py
+badd +70 mksp/apps/logistics/models/fulfillers/fulfillers.py
+badd +83 mksp/apps/logistics/admin/fulfillers.py
+badd +0 requirements.txt
+argglobal
+silent! argdel *
+edit ~/.vim/vimrc
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 118 - ((36 * winheight(0) + 30) / 60)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+118
+normal! 0
+tabedit ~/makespace/ansible_dev/site_deploy/makespace_provision.yml
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 11 - ((10 * winheight(0) + 30) / 60)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+11
+normal! 0
+tabedit ~/makespace/ansible_dev/build_a_box/builder_box.yml
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 1 - ((0 * winheight(0) + 30) / 60)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+tabedit mksp/apps/logistics/apis/fulfillers.py
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+wincmd _ | wincmd |
+vsplit
+2wincmd h
+wincmd w
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 120 + 181) / 362)
+exe 'vert 2resize ' . ((&columns * 120 + 181) / 362)
+exe 'vert 3resize ' . ((&columns * 120 + 181) / 362)
+argglobal
+setlocal fdm=expr
+setlocal fde=pymode#folding#expr(v:lnum)
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+56
+silent! normal! zo
+71
+silent! normal! zo
+72
+silent! normal! zo
+let s:l = 81 - ((80 * winheight(0) + 30) / 60)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+81
+normal! 02|
+wincmd w
+argglobal
+edit mksp/apps/logistics/models/fulfillers/fulfillers.py
+setlocal fdm=expr
+setlocal fde=pymode#folding#expr(v:lnum)
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 15 - ((14 * winheight(0) + 30) / 60)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+15
+normal! 0
+wincmd w
+argglobal
+edit requirements.txt
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 5 - ((4 * winheight(0) + 30) / 60)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+5
+normal! 0
+wincmd w
+2wincmd w
+exe 'vert 1resize ' . ((&columns * 120 + 181) / 362)
+exe 'vert 2resize ' . ((&columns * 120 + 181) / 362)
+exe 'vert 3resize ' . ((&columns * 120 + 181) / 362)
+tabnext 4
+if exists('s:wipebuf')
+"   silent exe 'bwipe ' . s:wipebuf
+endif
+" unlet! s:wipebuf
+set winheight=1 winwidth=20 shortmess=filnxtToO
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if file_readable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &so = s:so_save | let &siso = s:siso_save
+
+" Support for special windows like quick-fix and plug-in windows.
+" Everything down here is generated by vim-session (not supported
+" by :mksession out of the box).
+
+2wincmd w
+tabnext 4
+if exists('s:wipebuf')
+  if empty(bufname(s:wipebuf))
+if !getbufvar(s:wipebuf, '&modified')
+  let s:wipebuflines = getbufline(s:wipebuf, 1, '$')
+  if len(s:wipebuflines) <= 1 && empty(get(s:wipebuflines, 0, ''))
+    silent execute 'bwipeout' s:wipebuf
+  endif
+endif
+  endif
+endif
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: ft=vim ro nowrap smc=128
