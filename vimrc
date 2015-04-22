@@ -11,17 +11,22 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
 Plugin 'wincent/Command-T'
-Plugin 'scrooloose/syntastic'
-Plugin 'tell-k/vim-autopep8'
 Plugin 'rking/ag.vim'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'blueyed/vim-diminactive'
 Plugin 'luochen1990/rainbow'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
+
+" Appearance plugins
+Plugin 'bling/vim-airline'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'blueyed/vim-diminactive'
+
+" Python plugins
+Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'tell-k/vim-autopep8'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -140,6 +145,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_flake8_args = "--max-line-length=160"
 let g:syntastic_python_checkers = ['flake8']
+
 " autopep8
 let g:autopep8_max_line_length=159
 autocmd FileType python map <buffer> <leader>8 :call Autopep8()<CR>
