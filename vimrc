@@ -17,6 +17,9 @@ Plugin 'rking/ag.vim'
 Plugin 'luochen1990/rainbow'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
+Plugin 'moll/vim-bbye'
+Plugin 'craigemery/vim-autotag'
+Bundle 'chase/vim-ansible-yaml'
 
 " Appearance plugins
 Plugin 'bling/vim-airline'
@@ -30,6 +33,10 @@ Plugin 'tell-k/vim-autopep8'
 Plugin 'python-rope/ropevim'
 Plugin 'Raimondi/delimitMate'
 
+" Markdown plugins
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -41,7 +48,13 @@ set number
 set laststatus=2
 set wildignore=*.pyc,.DS_Store,*.id
 set showmatch
-colorscheme lucius
+colorscheme Tomorrow-Night
+" Change cursor shape between insert and normal mode in iTerm2.app
+if $TERM_PROGRAM =~ "iTerm"
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+endif
+
 " Search
 set incsearch
 set hlsearch
@@ -50,12 +63,13 @@ set hlsearch
 set wildmenu
 set wildmode=longest,full
 set autoread
+au BufEnter * :checktime
 set encoding=utf8
 set ffs=unix,dos,mac
 set expandtab
 set shiftwidth=4
 set tabstop=4
-
+set backspace=2
 "" Line handling
 set ai
 set si
@@ -80,6 +94,8 @@ map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
+map <leader>q :Bdelete<cr>
+map <leader>aq :bufdo :Bdelete<cr>
 " more natural splits by default
 set splitbelow
 set splitright
@@ -95,6 +111,10 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
+
+" python settings
+"au FileType python setlocal formatprg=autopep8\ -
+autocmd FileType python setlocal omnifunc=RopeCompleteFunc
 
 " Remember info about open buffers on close
 set viminfo^=%
@@ -128,12 +148,14 @@ function! VisualSelection(direction) range
 endfunction
 
 " CommandT options
-let g:CommandTFileScanner="git"
-noremap <leader>d :CommandT<cr>
+let g:CommandTFileScanner="find"
+nnoremap <silent> <leader>d :CommandT<cr>
+nnoremap <silent> <leader>b :CommandTMRU<cr>
+nnoremap <silent> <leader>g :CommandTTag<cr>
 
 " airline options
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'luna'
+let g:airline_theme = 'tomorrow'
 
 " vim-session options
 let g:session_autoload='yes'
@@ -160,4 +182,12 @@ let g:autopep8_disable_show_diff=0
 let g:rainbow_active=1
 
 " youcompleteme settings
-let g:ycm_key_list_select_completion = ['<Enter>', '<Down>']
+let g:ycm_key_list_select_completion = ['<Tab>', '<Down>']
+
+" fugitive settings
+noremap <space>gw :Gwrite<cr><cr>
+noremap <space>gc :Gcommit<cr>
+noremap <space>gb :Git checkout -b<Space>
+noremap <space>go :Git checkout<Space>
+noremap <space>gs :Gstatus<cr>
+noremap <space>gp :Gpush<cr>
