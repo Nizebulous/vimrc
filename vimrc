@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'wincent/Command-T'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'luochen1990/rainbow'
 Plugin 'xolox/vim-misc'
@@ -147,12 +147,6 @@ function! VisualSelection(direction) range
     let @" = l:saved_reg
 endfunction
 
-" CommandT options
-let g:CommandTFileScanner="find"
-nnoremap <silent> <leader>d :CommandT<cr>
-nnoremap <silent> <leader>b :CommandTMRU<cr>
-nnoremap <silent> <leader>g :CommandTTag<cr>
-
 " airline options
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'tomorrow'
@@ -191,3 +185,7 @@ noremap <space>gb :Git checkout -b<Space>
 noremap <space>go :Git checkout<Space>
 noremap <space>gs :Gstatus<cr>
 noremap <space>gp :Gpush<cr>
+
+" ctrlp settings
+noremap <C-b> :CtrlPBuffer<cr>
+noremap <leader>g :CtrlPBufTag<cr>
