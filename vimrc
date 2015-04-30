@@ -19,8 +19,9 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 Plugin 'moll/vim-bbye'
 Plugin 'craigemery/vim-autotag'
-Bundle 'chase/vim-ansible-yaml'
-
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'sheerun/vim-polyglot'
 " Appearance plugins
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
@@ -70,6 +71,8 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set backspace=2
+set autochdir
+
 "" Line handling
 set ai
 set si
@@ -157,7 +160,8 @@ let g:session_autosave='yes'
 let g:session_autosave_periodic=5
 
 " diminactive options
-let g:diminactive_use_syntax = 1
+let g:diminactive_use_syntax = 0
+:hi ColorColumn term=reverse ctermbg=238
 
 " syntastic options
 let g:syntastic_always_populate_loc_list = 1
@@ -188,4 +192,13 @@ noremap <space>gp :Gpush<cr>
 
 " ctrlp settings
 noremap <C-b> :CtrlPBuffer<cr>
-noremap <leader>g :CtrlPBufTag<cr>
+noremap <leader>g :CtrlPTag<cr>
+noremap <leader>G :CtrlPBufTag<cr>
+"let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      "\ --ignore .git
+      "\ --ignore .svn
+      "\ --ignore .hg
+      "\ --ignore .DS_Store
+      "\ --ignore "**/*.pyc"
+      "\ -g ""'
+let g:ctrlp_lazy_update = 350
