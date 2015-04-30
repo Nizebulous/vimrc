@@ -1,3 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/zachsmith/makespace/ansible_dev/build_a_box'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/zachsmith/makespace'
+let g:netrw_dirhist_2='/Users/zachsmith/makespace/site'
+let g:netrw_dirhist_3='/Users/zachsmith/makespace/site/mksp'
+let g:netrw_dirhist_4='/Users/zachsmith/makespace/site/mksp/config'
+let g:netrw_dirhist_5='/Users/zachsmith/makespace/site/mksp/config/local'
+let g:netrw_dirhist_6='/Users/zachsmith/makespace/ansible_dev/build_a_box'
+let g:netrw_dirhist_7='/Users/zachsmith/makespace/ansible_dev/build_a_box/roles'
+let g:netrw_dirhist_8='/Users/zachsmith/makespace/ansible_dev/build_a_box/roles/mksp_build'
+let g:netrw_dirhist_9='/Users/zachsmith/makespace/ansible_dev/build_a_box/roles/mksp_build/tasks'

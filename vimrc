@@ -2,45 +2,39 @@ set shell=/bin/bash
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-let g:vundle_default_git_proto = 'git'
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'rking/ag.vim'
-Plugin 'luochen1990/rainbow'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-session'
-Plugin 'moll/vim-bbye'
-Plugin 'craigemery/vim-autotag'
-Plugin 'chase/vim-ansible-yaml'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'sheerun/vim-polyglot'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'rking/ag.vim'
+Plug 'luochen1990/rainbow'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
+Plug 'moll/vim-bbye'
+Plug 'craigemery/vim-autotag'
+Plug 'chase/vim-ansible-yaml'
+Plug 'airblade/vim-gitgutter'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-vinegar'
 " Appearance plugins
-Plugin 'bling/vim-airline'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'blueyed/vim-diminactive'
+Plug 'bling/vim-airline'
+Plug 'flazz/vim-colorschemes'
+Plug 'blueyed/vim-diminactive'
 
 " Python plugins
-Plugin 'scrooloose/syntastic'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'tell-k/vim-autopep8'
-Plugin 'python-rope/ropevim'
-Plugin 'Raimondi/delimitMate'
+Plug 'scrooloose/syntastic'
+Plug 'Valloric/YouCompleteMe'
+Plug 'tell-k/vim-autopep8'
+Plug 'python-rope/ropevim'
+Plug 'Raimondi/delimitMate'
 
 " Markdown plugins
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()
+filetype indent plugin on
 
 " Appearance
 syntax enable
