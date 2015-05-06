@@ -49,6 +49,8 @@ if $TERM_PROGRAM =~ "iTerm"
     let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
     let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
 endif
+set ttyfast
+set equalalways
 
 " Search
 set incsearch
@@ -66,6 +68,7 @@ set shiftwidth=4
 set tabstop=4
 set backspace=2
 set autochdir
+set directory=/tmp/ 
 
 "" Line handling
 set ai
@@ -188,11 +191,11 @@ noremap <space>gp :Gpush<cr>
 noremap <C-b> :CtrlPBuffer<cr>
 noremap <leader>g :CtrlPTag<cr>
 noremap <leader>G :CtrlPBufTag<cr>
-"let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
-      "\ --ignore .git
-      "\ --ignore .svn
-      "\ --ignore .hg
-      "\ --ignore .DS_Store
-      "\ --ignore "**/*.pyc"
-      "\ -g ""'
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
 let g:ctrlp_lazy_update = 350
