@@ -12,10 +12,9 @@ Plug 'luochen1990/rainbow'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 Plug 'moll/vim-bbye'
-Plug 'craigemery/vim-autotag'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'chase/vim-ansible-yaml'
 Plug 'airblade/vim-gitgutter'
-Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-vinegar'
 Plug 'thinca/vim-ref'
 
@@ -36,8 +35,9 @@ Plug 'vim-erlang/vim-erlang-compiler'
 Plug 'scrooloose/syntastic'
 Plug 'Valloric/YouCompleteMe'
 Plug 'tell-k/vim-autopep8'
-Plug 'python-rope/ropevim'
+" Plug 'python-rope/ropevim'
 Plug 'Raimondi/delimitMate'
+Plug 'jaxbot/semantic-highlight.vim'
 
 " Markdown plugins
 Plug 'godlygeek/tabular'
@@ -53,7 +53,10 @@ set number
 set laststatus=2
 set wildignore=*.pyc,.DS_Store,*.id
 set showmatch
-colorscheme Tomorrow-Night
+
+" Set color scheme and then tweak a little
+colorscheme mustang
+
 " Change cursor shape between insert and normal mode in iTerm2.app
 if $TERM_PROGRAM =~ "iTerm"
     let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
@@ -200,12 +203,5 @@ noremap <space>gp :Gpush<cr>
 " ctrlp settings
 noremap <C-b> :CtrlPBuffer<cr>
 noremap <leader>g :CtrlPTag<cr>
-noremap <leader>G :CtrlPBufTag<cr>
-let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
-      \ --ignore .git
-      \ --ignore .svn
-      \ --ignore .hg
-      \ --ignore .DS_Store
-      \ --ignore "**/*.pyc"
-      \ -g ""'
-let g:ctrlp_lazy_update = 350
+noremap <leader>c :CtrlPClearAllCaches<cr>
+noremap <C-\> :CtrlPBufTag<cr>
