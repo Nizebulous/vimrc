@@ -17,14 +17,20 @@ Plug 'chase/vim-ansible-yaml'
 Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-vinegar'
-
-" Prose plugins
-Plug 'reedes/vim-pencil'
+Plug 'thinca/vim-ref'
 
 " Appearance plugins
 Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug 'blueyed/vim-diminactive'
+
+" Prose plugins
+Plug 'reedes/vim-pencil'
+
+" Erlang
+Plug 'vim-erlang/vim-erlang-runtime'
+Plug 'vim-erlang/vim-erlang-tags'
+Plug 'vim-erlang/vim-erlang-compiler'
 
 " Python plugins
 Plug 'scrooloose/syntastic'
