@@ -7,7 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'rking/ag.vim'
+Plug 'gabesoft/vim-ags'
 Plug 'luochen1990/rainbow'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
@@ -17,6 +17,10 @@ Plug 'chase/vim-ansible-yaml'
 Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-vinegar'
+
+" Prose plugins
+Plug 'reedes/vim-pencil'
+
 " Appearance plugins
 Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
