@@ -17,6 +17,7 @@ Plug 'chase/vim-ansible-yaml'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-vinegar'
 Plug 'thinca/vim-ref'
+Plug 'chrisbra/NrrwRgn'
 
 " Appearance plugins
 Plug 'bling/vim-airline'
@@ -56,7 +57,7 @@ set showmatch
 
 " Set color scheme and then tweak a little
 colorscheme mustang
-
+set guifont=Luculent:h13
 " Change cursor shape between insert and normal mode in iTerm2.app
 if $TERM_PROGRAM =~ "iTerm"
     let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
@@ -162,7 +163,9 @@ endfunction
 
 " airline options
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'tomorrow'
+let g:airline_left_sep=':'
+let g:airline_right_sep=':'
+let g:airline_theme = 'molokai'  
 
 " vim-session options
 let g:session_autoload='yes'
