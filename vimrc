@@ -56,7 +56,7 @@ set wildignore=*.pyc,.DS_Store,*.id
 set showmatch
 
 " Set color scheme and then tweak a little
-colorscheme mustang
+colorscheme iceberg
 set guifont=Luculent:h13
 " Change cursor shape between insert and normal mode in iTerm2.app
 if $TERM_PROGRAM =~ "iTerm"
@@ -165,16 +165,12 @@ endfunction
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_left_sep=':'
 let g:airline_right_sep=':'
-let g:airline_theme = 'molokai'  
+let g:airline_theme = 'luna'  
 
 " vim-session options
 let g:session_autoload='yes'
 let g:session_autosave='yes'
 let g:session_autosave_periodic=5
-
-" diminactive options
-let g:diminactive_use_syntax = 0
-:hi ColorColumn term=reverse ctermbg=238
 
 " syntastic options
 let g:syntastic_always_populate_loc_list = 1
@@ -208,3 +204,7 @@ noremap <C-b> :CtrlPBuffer<cr>
 noremap <leader>g :CtrlPTag<cr>
 noremap <leader>c :CtrlPClearAllCaches<cr>
 noremap <C-\> :CtrlPBufTag<cr>
+
+" diminactive options
+let g:diminactive_use_syntax = 1
+:hi ColorColumn term=reverse ctermbg=238
