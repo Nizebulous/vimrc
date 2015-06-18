@@ -18,7 +18,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-vinegar'
 Plug 'thinca/vim-ref'
 Plug 'chrisbra/NrrwRgn'
-
+Plug 'diepm/vim-rest-console'
 " Appearance plugins
 Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
@@ -115,7 +115,7 @@ set splitbelow
 set splitright
 
 " tags
-set tags=~/makespace/site/.tags
+set tags=tags;
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
