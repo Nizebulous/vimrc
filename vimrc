@@ -125,6 +125,7 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
+autocmd BufWrite *.erl call DeleteTrailingWS()
 
 " python settings
 "au FileType python setlocal formatprg=autopep8\ -
