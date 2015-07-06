@@ -19,6 +19,8 @@ Plug 'tpope/vim-vinegar'
 Plug 'thinca/vim-ref'
 Plug 'chrisbra/NrrwRgn'
 Plug 'diepm/vim-rest-console'
+Plug 'mtth/scratch.vim'
+Plug 'lepture/vim-jinja'
 " Appearance plugins
 Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
@@ -36,7 +38,7 @@ Plug 'vim-erlang/vim-erlang-compiler'
 Plug 'scrooloose/syntastic'
 Plug 'Valloric/YouCompleteMe'
 Plug 'tell-k/vim-autopep8'
-" Plug 'python-rope/ropevim'
+Plug 'python-rope/ropevim'
 Plug 'Raimondi/delimitMate'
 Plug 'jaxbot/semantic-highlight.vim'
 
@@ -110,6 +112,7 @@ map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 map <leader>q :Bdelete<cr>
 map <leader>aq :bufdo :Bdelete<cr>
+
 " more natural splits by default
 set splitbelow
 set splitright
@@ -186,9 +189,6 @@ let g:autopep8_max_line_length=159
 autocmd FileType python map <buffer> <leader>8 :call Autopep8()<CR>
 let g:autopep8_disable_show_diff=0
 
-" rainbow settings
-let g:rainbow_active=1
-
 " youcompleteme settings
 let g:ycm_key_list_select_completion = ['<Tab>', '<Down>']
 
@@ -207,5 +207,11 @@ noremap <leader>c :CtrlPClearAllCaches<cr>
 noremap <C-\> :CtrlPBufTag<cr>
 
 " diminactive options
-let g:diminactive_use_syntax = 1
+let g:diminactive_use_syntax=1
 :hi ColorColumn term=reverse ctermbg=238
+
+" rainbow settings
+let g:rainbow_active=1
+
+" gutentags
+let g:gutentags_project_root=["~/envs"]
