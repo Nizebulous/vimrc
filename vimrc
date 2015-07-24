@@ -7,24 +7,28 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'gabesoft/vim-ags'
 Plug 'luochen1990/rainbow'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 Plug 'moll/vim-bbye'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'chase/vim-ansible-yaml'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-vinegar'
 Plug 'thinca/vim-ref'
 Plug 'chrisbra/NrrwRgn'
 Plug 'diepm/vim-rest-console'
 Plug 'mtth/scratch.vim'
-Plug 'lepture/vim-jinja'
+Plug 'tpope/vim-eunuch'
+Plug 'wincent/ferret'
+
 " Appearance plugins
 Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug 'blueyed/vim-diminactive'
+
+" Syntax
+Plug 'lepture/vim-jinja'
+Plug 'chase/vim-ansible-yaml'
 
 " Prose plugins
 Plug 'reedes/vim-pencil'
