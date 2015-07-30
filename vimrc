@@ -20,6 +20,7 @@ Plug 'diepm/vim-rest-console'
 Plug 'mtth/scratch.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'wincent/ferret'
+Plug 'pbrisbin/vim-mkdir'
 
 " Appearance plugins
 Plug 'bling/vim-airline'
