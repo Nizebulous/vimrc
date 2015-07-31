@@ -21,6 +21,7 @@ Plug 'mtth/scratch.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'wincent/ferret'
 Plug 'pbrisbin/vim-mkdir'
+Plug 'terryma/vim-multiple-cursors'
 
 " Appearance plugins
 Plug 'bling/vim-airline'
@@ -95,7 +96,8 @@ set directory=/tmp/
 set ai
 set si
 set lbr
-set tw=256
+set wrap
+set nolist
 
 " Files
 set nobackup
