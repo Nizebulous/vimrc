@@ -22,6 +22,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'wincent/ferret'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-surround'
 
 " Appearance plugins
 Plug 'bling/vim-airline'
