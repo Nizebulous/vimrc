@@ -22,6 +22,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'wincent/ferret'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'tpope/vim-repeat'
+Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 
 " Appearance plugins
@@ -97,7 +98,8 @@ set directory=/tmp/
 set ai
 set si
 set lbr
-set tw=256
+set wrap
+set nolist
 
 " Files
 set nobackup
