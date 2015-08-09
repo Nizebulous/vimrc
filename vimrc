@@ -21,6 +21,8 @@ Plug 'mtth/scratch.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'wincent/ferret'
 Plug 'pbrisbin/vim-mkdir'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
 
 " Appearance plugins
 Plug 'bling/vim-airline'
@@ -41,7 +43,7 @@ Plug 'vim-erlang/vim-erlang-compiler'
 
 " Python plugins
 Plug 'scrooloose/syntastic'
-Plug 'Valloric/YouCompleteMe'
+Plug 'davidhalter/jedi-vim'
 Plug 'tell-k/vim-autopep8'
 Plug 'python-rope/ropevim'
 Plug 'Raimondi/delimitMate'
@@ -123,7 +125,7 @@ set splitbelow
 set splitright
 
 " tags
-set tags=tags;
+" set tags=tags;
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
