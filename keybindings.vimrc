@@ -21,7 +21,8 @@ noremap <leader>gs :Gstatus<cr>
 noremap <leader>gp :Gpush<cr>
 
 " ctrlp settings
-noremap <leader>,p :CtrlPBuffer<cr>
+noremap <leader>,p :CtrlP<cr>
+noremap <leader>,b :CtrlPBuffer<cr>
 noremap <leader>,g :CtrlPTag<cr>
 noremap <leader>,c :CtrlPClearAllCaches<cr>
 noremap <leader>,\ :CtrlPBufTag<cr>
