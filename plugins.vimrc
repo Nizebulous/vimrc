@@ -37,14 +37,15 @@ Plug 'vim-erlang/vim-erlang-tags'
 Plug 'vim-erlang/vim-erlang-compiler'
 
 " Python plugins
-Plug 'scrooloose/syntastic'
-Plug 'davidhalter/jedi-vim'
 Plug 'tell-k/vim-autopep8'
 Plug 'python-rope/ropevim'
 Plug 'Raimondi/delimitMate'
 Plug 'jaxbot/semantic-highlight.vim'
+Plug 'davidhalter/jedi-vim'
 
 " Markdown plugins
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
+" Code
+Plug 'scrooloose/syntastic'

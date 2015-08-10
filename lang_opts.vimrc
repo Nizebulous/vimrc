@@ -1,2 +1,1 @@
-" python settings
-autocmd FileType python setlocal omnifunc=RopeCompleteFunc
+leg g:ropevim_autoimport_modules = ["os", "mksp", "django", "lib"]

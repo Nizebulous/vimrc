@@ -26,3 +26,6 @@ noremap <leader>,b :CtrlPBuffer<cr>
 noremap <leader>,g :CtrlPTag<cr>
 noremap <leader>,c :CtrlPClearAllCaches<cr>
 noremap <leader>,\ :CtrlPBufTag<cr>
+
+" rope
+noremap <leader>9 :RopeAutoImport<cr>
