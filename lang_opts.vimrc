@@ -1,1 +1,1 @@
-leg g:ropevim_autoimport_modules = ["os", "mksp", "django", "lib"]
+let g:ropevim_autoimport_modules = ["os", "mksp", "django", "lib"]

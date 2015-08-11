@@ -18,6 +18,8 @@ Plug 'pbrisbin/vim-mkdir'
 Plug 'tpope/vim-repeat'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion'
+Plug 'goldfeld/vim-seek'
 
 " Appearance plugins
 Plug 'bling/vim-airline'
