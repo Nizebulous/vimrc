@@ -20,6 +20,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'goldfeld/vim-seek'
+Plug 'michaeljsmith/vim-indent-object'
 
 " Appearance plugins
 Plug 'bling/vim-airline'
