@@ -31,3 +31,13 @@ let g:rainbow_active=1
 
 " gutentags
 let g:gutentags_project_root=["~/envs"]
+
+" neocomplete
+let g:neocomplete#enable_at_startup = 1
+autocmd FileType python setlocal omnifunc=jedi#completions
+let g:jedi#completions_enabled = 0
+let g:jedi#auto_vim_configuration = 0
+let g:neocomplete#force_omni_input_patterns.python =
+\ '\%([^. \t]\.\|^\s*@\|^\s*from\s.\+import \|^\s*from \|^\s*import \)\w*'
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" alternative pattern: '\h\w*\|[^. \t]\.\w*'

@@ -45,7 +45,7 @@ Plug 'python-rope/ropevim'
 Plug 'Raimondi/delimitMate'
 Plug 'jaxbot/semantic-highlight.vim'
 Plug 'davidhalter/jedi-vim'
-
+Plug 'Shougo/neocomplete.vim'
 " Markdown plugins
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
