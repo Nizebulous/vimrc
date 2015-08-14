@@ -1,6 +1,6 @@
 " Window management
 map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
+map <leader>to :tabnext<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 map <leader>q :Bdelete<cr>
@@ -29,3 +29,8 @@ noremap <leader>,\ :CtrlPBufTag<cr>
 
 " rope
 noremap <leader>9 :RopeAutoImport<cr>
+
+nnoremap ; :
+" nnoremap : ;
+
+inoremap <expr>  <C-K>   BDG_GetDigraph()

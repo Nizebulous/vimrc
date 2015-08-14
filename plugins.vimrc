@@ -33,6 +33,7 @@ Plug 'chase/vim-ansible-yaml'
 
 " Prose plugins
 Plug 'reedes/vim-pencil'
+Plug 'atweiden/vim-betterdigraphs'
 
 " Erlang
 Plug 'vim-erlang/vim-erlang-runtime'
@@ -46,6 +47,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'jaxbot/semantic-highlight.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'Shougo/neocomplete.vim'
+
 " Markdown plugins
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'

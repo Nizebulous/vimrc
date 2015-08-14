@@ -7,6 +7,9 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 filetype indent plugin on
 
+" preload
+let g:neocomplete#enable_at_startup = 1
+
 :runtime appearance.vimrc
 :runtime behavior.vimrc
 :runtime helpers.vimrc
