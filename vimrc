@@ -5,7 +5,7 @@ filetype off                  " required
 call plug#begin('~/.vim/plugged')
 :runtime plugins.vimrc
 call plug#end()
-filetype indent plugin on
+filetype plugin indent on
 
 " preload
 let g:neocomplete#enable_at_startup = 1
