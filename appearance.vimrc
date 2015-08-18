@@ -6,7 +6,7 @@ set wildignore=*.pyc,.DS_Store,*.id
 set showmatch
 
 " Set color scheme and then tweak a little
-colorscheme iceberg
+colorscheme darktango
 set guifont=Luculent:h13
 " Change cursor shape between insert and normal mode in iTerm2.app
 if $TERM_PROGRAM =~ "iTerm"
