@@ -21,6 +21,7 @@ Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'goldfeld/vim-seek'
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'tpope/vim-rhubarb'
 
 " Appearance plugins
 Plug 'bling/vim-airline'

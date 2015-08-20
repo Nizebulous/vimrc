@@ -24,8 +24,6 @@ let g:autopep8_disable_show_diff=0
 
 " diminactive options
 let g:diminactive_use_syntax=1
-:hi ColorColumn term=reverse ctermbg=238 guibg=#252525
-" :hi clear ColorColumn 
 
 " rainbow settings
 let g:rainbow_active=1
