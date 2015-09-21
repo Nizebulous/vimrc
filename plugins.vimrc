@@ -31,6 +31,7 @@ Plug 'blueyed/vim-diminactive'
 " Syntax
 Plug 'lepture/vim-jinja'
 Plug 'chase/vim-ansible-yaml'
+Plug 'markcornick/vim-terraform'
 
 " Prose plugins
 Plug 'reedes/vim-pencil'
