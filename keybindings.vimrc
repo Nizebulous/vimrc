@@ -34,4 +34,5 @@ noremap <leader>9 :RopeAutoImport<cr>
 nnoremap ; :
 " nnoremap : ;
 
-inoremap <expr>  <C-K>   BDG_GetDigraph()
+" Enter insert after word
+map <leader>e ea

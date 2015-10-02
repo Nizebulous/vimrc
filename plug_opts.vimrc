@@ -45,3 +45,5 @@ let g:neocomplete#force_omni_input_patterns.python = '\%([^. \t]\.\|^\s*@\|^\s*f
 
 " delimitmate
 let g:delimitMate_expand_cr = 1
+
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']

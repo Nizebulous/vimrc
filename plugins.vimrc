@@ -22,6 +22,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'goldfeld/vim-seek'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-rhubarb'
+Plug 'unblevable/quick-scope'
 
 " Appearance plugins
 Plug 'bling/vim-airline'
@@ -32,10 +33,6 @@ Plug 'blueyed/vim-diminactive'
 Plug 'lepture/vim-jinja'
 Plug 'chase/vim-ansible-yaml'
 Plug 'markcornick/vim-terraform'
-
-" Prose plugins
-Plug 'reedes/vim-pencil'
-Plug 'atweiden/vim-betterdigraphs'
 
 " Erlang
 Plug 'vim-erlang/vim-erlang-runtime'
@@ -50,9 +47,10 @@ Plug 'jaxbot/semantic-highlight.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'Shougo/neocomplete.vim'
 
-" Markdown plugins
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
+" Pandoc plugins
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'vim-pandoc/vim-pandoc'
+
 
 " Code
 Plug 'scrooloose/syntastic'

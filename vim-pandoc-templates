@@ -1,0 +1,1 @@
+md_pdf|pdf -S --normalize --latex-engine=xelatex
