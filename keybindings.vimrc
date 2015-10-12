@@ -36,3 +36,9 @@ nnoremap ; :
 
 " Enter insert after word
 map <leader>e ea
+
+" Disable weird 'Ctrl-C' message
+nnoremap <C-c> <silent> <C-c>
+
+" Rope
+noremap <C-c>ai :RopeAutoImport<cr>

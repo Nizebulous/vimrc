@@ -8,7 +8,7 @@ set showmatch
 " Set color scheme and then tweak a little
 colorscheme two2tango
 :hi ColorColumn term=reverse ctermbg=238 guibg=#4A4A4A
-set guifont=Luculent:h13
+set guifont=Iosevka:h14
 
 " Change cursor shape between insert and normal mode in iTerm2.app
 if $TERM_PROGRAM =~ "iTerm"

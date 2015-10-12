@@ -46,4 +46,10 @@ let g:neocomplete#force_omni_input_patterns.python = '\%([^. \t]\.\|^\s*@\|^\s*f
 " delimitmate
 let g:delimitMate_expand_cr = 1
 
+" quick move
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+"pandoc syntax
+let g:pandoc#syntax#conceal#blacklist = ["quotes"]
+
+let g:sexp_enable_insert_mode_mappings = 0
