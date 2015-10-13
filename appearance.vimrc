@@ -6,9 +6,9 @@ set wildignore=*.pyc,.DS_Store,*.id
 set showmatch
 
 " Set color scheme and then tweak a little
-colorscheme two2tango
+colorscheme cabin
 :hi ColorColumn term=reverse ctermbg=238 guibg=#4A4A4A
-set guifont=Iosevka:h14
+set guifont=Iosevka:h13
 
 " Change cursor shape between insert and normal mode in iTerm2.app
 if $TERM_PROGRAM =~ "iTerm"

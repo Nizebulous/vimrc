@@ -28,6 +28,7 @@ Plug 'unblevable/quick-scope'
 Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug 'blueyed/vim-diminactive'
+Plug 'cabin/cabin-colorscheme'
 
 " Syntax
 Plug 'lepture/vim-jinja'
