@@ -38,7 +38,7 @@ nnoremap ; :
 map <leader>e ea
 
 " Disable weird 'Ctrl-C' message
-nnoremap <C-c> <silent> <C-c>
+inoremap wq <esc>
 
 " Rope
 noremap <C-c>ai :RopeAutoImport<cr>

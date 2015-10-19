@@ -41,3 +41,7 @@ set splitright
 
 " Remember info about open buffers on close
 set viminfo^=%
+
+" redraw behavior
+set lazyredraw
+set ttyfast
