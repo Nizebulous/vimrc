@@ -20,25 +20,23 @@ noremap <leader>go :Git checkout<Space>
 noremap <leader>gs :Gstatus<cr>
 noremap <leader>gp :Gpush<cr>
 
-" ctrlp settings
-noremap <leader>,p :CtrlP<cr>
-noremap <leader>,b :CtrlPBuffer<cr>
-noremap <leader>,g :CtrlPTag<cr>
-noremap <leader>,c :CtrlPClearAllCaches<cr>
-noremap <leader>,\ :CtrlPBufTag<cr>
-noremap <leader>,P :CtrlP ~/mksp/
+" unite
+nnoremap <leader><leader>p :UniteWithProjectDir -start-insert file_rec/async<cr>
+nnoremap <leader><leader>a :Unite grep:.<cr>
+let g:unite_source_history_yank_enable = 1
+nnoremap <leader><leader>y :Unite -quick-match history/yank<cr>
+nnoremap <leader><leader>b :Unite -quick-match -auto-preview buffer<cr>
+nnoremap <leader><leader>\ :Unite -start-insert tag/include<cr>
+nnoremap <leader><leader>g :UniteWithProjectDir -start-insert tag<cr>
+nnoremap <leader><leader>P :UniteWithInputDirectory -start-insert file_rec/async<cr>
 
 " rope
 noremap <leader>9 :RopeAutoImport<cr>
+noremap <leader>- :RopeOrganizeImports<cr>
 
 nnoremap ; :
-" nnoremap : ;
+inoremap wq <esc>
 
 " Enter insert after word
 map <leader>e ea
 
-" Disable weird 'Ctrl-C' message
-inoremap wq <esc>
-
-" Rope
-noremap <C-c>ai :RopeAutoImport<cr>

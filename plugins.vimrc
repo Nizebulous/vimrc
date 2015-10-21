@@ -1,5 +1,7 @@
 " Dependencies
 Plug 'xolox/vim-misc'
+Plug 'Shougo/neoinclude.vim'
+Plug 'Shougo/vimproc.vim'
 
 " Text
 Plug 'tpope/vim-commentary'
@@ -12,15 +14,15 @@ Plug 'Raimondi/delimitMate' " automatically close paired characters
 
 " Interface
 Plug 'tpope/vim-fugitive' " git
-Plug 'ctrlpvim/ctrlp.vim' " file search
 Plug 'moll/vim-bbye' " :BDelete
 Plug 'xolox/vim-session' 
 Plug 'tpope/vim-eunuch' " unix-alike commands
-Plug 'wincent/ferret' " :Ack
 Plug 'tpope/vim-rhubarb' " <C x><C o> auto-complete of issue numbers in git commit messages
 Plug 'mrtazz/simplenote.vim'
 Plug 'Shougo/neocomplete.vim' " keyword completion
 Plug 'scrooloose/syntastic' " syntax checking
+Plug 'Shougo/unite.vim' " multiple-source fuzzy navigation
+Plug 'tsukkee/unite-tag' " tag source for unite
 
 " Behavior
 Plug 'ludovicchabant/vim-gutentags'

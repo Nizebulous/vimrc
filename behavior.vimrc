@@ -13,7 +13,6 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set backspace=2
-set autochdir
 set directory=/tmp/ 
 set tags+=tags
 

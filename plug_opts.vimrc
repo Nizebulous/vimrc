@@ -2,7 +2,7 @@
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_left_sep=':'
 let g:airline_right_sep=':'
-let g:airline_theme = 'luna'  
+let g:airline_theme = 'lucius'  
 
 " vim-session options
 let g:session_autoload='yes'
@@ -57,3 +57,14 @@ let g:sexp_enable_insert_mode_mappings = 0
 
 " simplenote settings
 source ~/.simplenoterc
+
+" unite
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+" Use ag in unite grep source.
+let g:unite_source_grep_command = 'ag'
+let g:unite_source_grep_default_opts =
+\ '-i --vimgrep --hidden --ignore ' .
+\ '''.hg'' --ignore ''.svn'' --ignore ''.git'' --ignore ''.bzr'''
+let g:unite_source_grep_recursive_opt = ''
+call unite#filters#sorter_default#use(['sorter_selecta'])
+
