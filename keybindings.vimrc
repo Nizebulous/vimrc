@@ -22,7 +22,7 @@ noremap <leader>gp :Gpush<cr>
 
 " unite
 nnoremap <leader><leader>p :UniteWithProjectDir -start-insert -no-split file_rec/async<cr>
-nnoremap <leader><leader>a :Unite g-no-split rep:.<cr>
+nnoremap <leader><leader>a :Unite -no-split grep:.<cr>
 let g:unite_source_history_yank_enable = 1
 nnoremap <leader><leader>y :Unite -quick-match history/yank<cr>
 nnoremap <leader><leader>b :Unite -quick-match -auto-preview -no-split buffer<cr>
