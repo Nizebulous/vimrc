@@ -7,7 +7,7 @@ Plug 'Shougo/vimproc.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround' " ysiw
 Plug 'terryma/vim-multiple-cursors' " <C-n>
-Plug 'easymotion/vim-easymotion' " <leader><leader>
+Plug 'easymotion/vim-easymotion' " <,.> f, <,.> t, <,.> w, etc
 Plug 'goldfeld/vim-seek' " s<char><char> to seek (1s for old seek behavior)
 Plug 'michaeljsmith/vim-indent-object' " add indent as motion object i
 Plug 'Raimondi/delimitMate' " automatically close paired characters
