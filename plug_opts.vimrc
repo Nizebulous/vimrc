@@ -22,6 +22,9 @@ let g:autopep8_max_line_length=159
 autocmd FileType python map <buffer> <leader>8 :call Autopep8()<CR>
 let g:autopep8_disable_show_diff=0
 
+" easymotion
+let g:EasyMotion_leader_key = '<leader>.' 
+
 " diminactive options
 let g:diminactive_use_syntax=1
 
