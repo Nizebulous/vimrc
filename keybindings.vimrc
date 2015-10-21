@@ -37,6 +37,9 @@ noremap <leader>- :RopeOrganizeImports<cr>
 
 nnoremap ; :
 inoremap wq <esc>
+" Map l to up, k to down
+noremap l k
+noremap k j
 
 " Enter insert after word
 map <leader>e ea
