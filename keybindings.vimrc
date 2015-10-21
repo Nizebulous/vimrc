@@ -21,14 +21,15 @@ noremap <leader>gs :Gstatus<cr>
 noremap <leader>gp :Gpush<cr>
 
 " unite
-nnoremap <leader><leader>p :UniteWithProjectDir -start-insert file_rec/async<cr>
-nnoremap <leader><leader>a :Unite grep:.<cr>
+nnoremap <leader><leader>p :UniteWithProjectDir -start-insert -no-split file_rec/async<cr>
+nnoremap <leader><leader>a :Unite g-no-split rep:.<cr>
 let g:unite_source_history_yank_enable = 1
 nnoremap <leader><leader>y :Unite -quick-match history/yank<cr>
-nnoremap <leader><leader>b :Unite -quick-match -auto-preview buffer<cr>
-nnoremap <leader><leader>\ :Unite -start-insert tag/include<cr>
-nnoremap <leader><leader>g :UniteWithProjectDir -start-insert tag<cr>
-nnoremap <leader><leader>P :UniteWithInputDirectory -start-insert file_rec/async<cr>
+nnoremap <leader><leader>b :Unite -quick-match -auto-preview -no-split buffer<cr>
+nnoremap <leader><leader>\ :Unite -start-insert -no-split tag/include<cr>
+nnoremap <leader><leader>g :UniteWithProjectDir -start-insert -no-split tag<cr>
+nnoremap <leader><leader>G :UniteWithProjectDir -start-insert tag<cr>
+nnoremap <leader><leader>P :UniteWithInputDirectory -start-insert -no-split file_rec/async<cr>
 
 " rope
 noremap <leader>9 :RopeAutoImport<cr>
