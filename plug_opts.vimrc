@@ -62,6 +62,9 @@ let g:sexp_enable_insert_mode_mappings = 0
 source ~/.simplenoterc
 
 " unite
+if !exists('g:fastunite_default_options')
+  let g:fastunite_default_options = { }
+endif
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 " Use ag in unite grep source.
 let g:unite_source_grep_command = 'ag'
@@ -70,4 +73,48 @@ let g:unite_source_grep_default_opts =
 \ '''.hg'' --ignore ''.svn'' --ignore ''.git'' --ignore ''.bzr'''
 let g:unite_source_grep_recursive_opt = ''
 call unite#filters#sorter_default#use(['sorter_selecta'])
+let g:unite_source_tag_max_fname_length = 70
+let g:unite_source_mark_marks =
+  \ "abcdefghijklmnopqrstuvwxyz" .
+  \ "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+" let g:unite_source_rec_async_command =
+"     \ ['ag', '--nocolor', '--nogroup', '-g', '""']
+call unite#custom#source('tag', 'sorters', ['sorter_rank'])
+let s:file_recs = 'file,directory,file_rec,file_rec/async'
+let s:file_recs .= ',tag'
+call unite#custom#source(s:file_recs, 'sorters', ['sorter_selecta'])
+call unite#custom#source(s:file_recs, 'matchers',
+  \ ['converter_relative_word', 'matcher_fuzzy'])
+call unite#custom#profile('default', 'context', extend({
+  \ 'direction' : 'topleft',
+  \ 'prompt' : '  >  '
+  \ }, g:fastunite_default_options))
 
+call unite#custom#profile('source/grep', 'context', {
+  \ 'buffer_name' : 'grep',
+  \ 'no_quit' : 0
+  \ })
+
+call unite#custom#profile('source/buffer', 'context', {
+  \ 'buffer_name' : 'buffer',
+  \ 'start_insert' : 1
+  \ })
+
+call unite#custom#profile('source/tag', 'context', {
+  \ 'buffer_name' : 'tag',
+  \ 'start_insert' : 1,
+  \ 'resume' : 1,
+  \ 'input' : ''
+  \ })
+
+call unite#custom#profile('source/neomru/file', 'context', {
+  \ 'buffer_name' : 'mru',
+  \ 'start_insert' : 1
+  \ })
+
+call unite#custom#profile('source/neomru/directory', 'context', {
+  \ 'buffer_name' : 'dirs',
+  \ 'start_insert' : 1,
+  \ 'default_action' : 'cd'
+  \ })
+hi link uniteInputPrompt Special
