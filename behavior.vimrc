@@ -14,7 +14,7 @@ set shiftwidth=4
 set tabstop=4
 set backspace=2
 set directory=/tmp/ 
-set tags+=tags
+set tags=tags;
 set autochdir
 
 let mapleader = ","
