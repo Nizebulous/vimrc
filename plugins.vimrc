@@ -18,7 +18,7 @@ Plug 'moll/vim-bbye' " :BDelete
 Plug 'xolox/vim-session' 
 Plug 'tpope/vim-eunuch' " unix-alike commands
 Plug 'tpope/vim-rhubarb' " <C x><C o> auto-complete of issue numbers in git commit messages
-Plug 'mrtazz/simplenote.vim'
+Plug 'xolox/vim-notes'
 Plug 'Shougo/neocomplete.vim' " keyword completion
 Plug 'scrooloose/syntastic' " syntax checking
 Plug 'Shougo/unite.vim' " multiple-source fuzzy navigation
