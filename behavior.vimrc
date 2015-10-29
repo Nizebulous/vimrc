@@ -43,5 +43,4 @@ set splitright
 set viminfo^=%
 
 " redraw behavior
-set lazyredraw
 set ttyfast
