@@ -59,9 +59,6 @@ let g:pandoc#syntax#conceal#blacklist = ["quotes"]
 " sexp  setings
 let g:sexp_enable_insert_mode_mappings = 0
 
-" simplenote settings
-source ~/.simplenoterc
-
 " unite
 if !exists('g:fastunite_default_options')
   let g:fastunite_default_options = { }
