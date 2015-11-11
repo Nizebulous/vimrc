@@ -40,7 +40,7 @@ inoremap wq <esc>
 " Map l to up, k to down
 noremap l k
 noremap k j
-
+noremap H l
 " Enter insert after word
 map <leader>e ea
 
