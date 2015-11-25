@@ -34,7 +34,7 @@ Plug 'tpope/vim-repeat'
 Plug 'bling/vim-airline' " status line
 Plug 'flazz/vim-colorschemes'
 Plug 'blueyed/vim-diminactive' " dim inactive pane
-Plug 'cabin/cabin-colorscheme' 
+Plug 'DrSpatula/vim-buddy' 
 Plug 'luochen1990/rainbow' " parenthesis highlighting
 Plug 'airblade/vim-gitgutter'
 Plug 'unblevable/quick-scope' " highlight characters to t/f to

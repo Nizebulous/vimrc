@@ -21,8 +21,8 @@ noremap <leader>gs :Gstatus<cr>
 noremap <leader>gp :Gpush<cr>
 
 " unite
-nnoremap <leader><leader>p :UniteWithProjectDir -resume -buffer-name=project -no-restore -no-split -input= -start-insert -hide-source-names -unique file directory file_rec/async<cr>
-nnoremap <leader><leader>a :Unite -no-split grep:.<cr>
+nnoremap <leader><leader>p :UniteWithProjectDir -resume -no-restore -no-split -input= -start-insert -hide-source-names -unique file directory file_rec<cr>
+nnoremap <leader><leader>a :Unite -no-split grep:**<cr>
 let g:unite_source_history_yank_enable = 1
 nnoremap <leader><leader>y :Unite -quick-match history/yank<cr>
 nnoremap <leader><leader>b :Unite -quick-match -auto-preview -no-split buffer<cr>

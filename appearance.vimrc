@@ -6,7 +6,7 @@ set wildignore=*.pyc,.DS_Store,*.id
 set showmatch
 
 " Set color scheme and then tweak a little
-colorscheme cabin
+colorscheme buddy
 :hi ColorColumn term=reverse ctermbg=238 guibg=#4A4A4A
 set guifont=Iosevka:h13
 
