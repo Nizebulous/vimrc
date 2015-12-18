@@ -29,12 +29,13 @@ Plug 'Shougo/neoyank.vim' " yank source for unite
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'pbrisbin/vim-mkdir' " automatically create directories to save
 Plug 'tpope/vim-repeat'
+Plug 'christoomey/vim-sort-motion' " sort text objects
 "
 " Appearance plugins
 Plug 'bling/vim-airline' " status line
 Plug 'flazz/vim-colorschemes'
 Plug 'blueyed/vim-diminactive' " dim inactive pane
-Plug 'DrSpatula/vim-buddy' 
+Plug 'mkarmona/colorsbox' 
 Plug 'luochen1990/rainbow' " parenthesis highlighting
 Plug 'airblade/vim-gitgutter'
 Plug 'unblevable/quick-scope' " highlight characters to t/f to
@@ -42,7 +43,7 @@ Plug 'unblevable/quick-scope' " highlight characters to t/f to
 " Syntaxes
 Plug 'lepture/vim-jinja'
 Plug 'chase/vim-ansible-yaml'
-Plug 'markcornick/vim-terraform'
+Plug 'hashivim/vim-terraform'
 
 " Erlang
 Plug 'vim-erlang/vim-erlang-runtime'

@@ -2,7 +2,7 @@
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_left_sep=':'
 let g:airline_right_sep=':'
-let g:airline_theme = 'lucius'  
+let g:airline_theme = 'colorsbox'  
 
 " vim-session options
 let g:session_autoload='yes'
@@ -116,3 +116,8 @@ call unite#custom#profile('source/neomru/directory', 'context', {
             \ 'default_action' : 'cd'
             \ })
 hi link uniteInputPrompt Special
+
+" notes
+:let g:notes_directories = ['~/Dropbox/Notational\ Data']
+:let g:notes_suffix = '.md'
+

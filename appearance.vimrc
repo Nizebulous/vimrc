@@ -6,8 +6,8 @@ set wildignore=*.pyc,.DS_Store,*.id
 set showmatch
 
 " Set color scheme and then tweak a little
-colorscheme buddy
-:hi ColorColumn term=reverse ctermbg=238 guibg=#4A4A4A
+colorscheme colorsbox-stnight
+" :hi ColorColumn term=reverse ctermbg=238 guibg=#4A4A4A
 set guifont=Iosevka:h13
 
 " Change cursor shape between insert and normal mode in iTerm2.app
