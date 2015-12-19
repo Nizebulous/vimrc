@@ -120,4 +120,4 @@ hi link uniteInputPrompt Special
 " notes
 :let g:notes_directories = ['~/Dropbox/Notational\ Data']
 :let g:notes_suffix = '.md'
-
+:let g:notes_title_sync = 'rename_file'

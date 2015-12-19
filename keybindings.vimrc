@@ -46,3 +46,5 @@ noremap H l
 " Enter insert after word
 map <leader>e ea
 
+" notes
+map <leader>n :set ft=notes<cr>
