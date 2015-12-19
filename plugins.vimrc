@@ -24,6 +24,7 @@ Plug 'scrooloose/syntastic' " syntax checking
 Plug 'Shougo/unite.vim' " multiple-source fuzzy navigation
 Plug 'tsukkee/unite-tag' " tag source for unite
 Plug 'Shougo/neoyank.vim' " yank source for unite
+Plug 'Shougo/unite-outline' " outline source for unite
 
 " Behavior
 Plug 'ludovicchabant/vim-gutentags'
