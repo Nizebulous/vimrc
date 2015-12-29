@@ -14,6 +14,7 @@ Plug 'Raimondi/delimitMate' " automatically close paired characters
 
 " Interface
 Plug 'tpope/vim-fugitive' " git
+Plug 'jreybert/vimagit'
 Plug 'moll/vim-bbye' " :BDelete
 Plug 'xolox/vim-session' 
 Plug 'tpope/vim-eunuch' " unix-alike commands
@@ -25,21 +26,25 @@ Plug 'Shougo/unite.vim' " multiple-source fuzzy navigation
 Plug 'tsukkee/unite-tag' " tag source for unite
 Plug 'Shougo/neoyank.vim' " yank source for unite
 Plug 'Shougo/unite-outline' " outline source for unite
+Plug 'lfv89/vim-interestingwords' " highlight occurances of a word with <leader>k
 
 " Behavior
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'pbrisbin/vim-mkdir' " automatically create directories to save
 Plug 'tpope/vim-repeat'
 Plug 'christoomey/vim-sort-motion' " sort text objects
-"
+Plug 'jeetsukumaran/vim-markology' " manage and display marks
+
 " Appearance plugins
-Plug 'bling/vim-airline' " status line
+Plug 'itchyny/lightline.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'blueyed/vim-diminactive' " dim inactive pane
 Plug 'mkarmona/colorsbox' 
 Plug 'luochen1990/rainbow' " parenthesis highlighting
 Plug 'airblade/vim-gitgutter'
 Plug 'unblevable/quick-scope' " highlight characters to t/f to
+Plug 'Konfekt/FastFold' " don't redraw folded code
+Plug 'justincampbell/vim-eighties' " automatically resize windows
 
 " Syntaxes
 Plug 'lepture/vim-jinja'
