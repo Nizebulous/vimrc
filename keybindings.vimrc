@@ -40,12 +40,23 @@ noremap <leader>- :RopeOrganizeImports<cr>
 
 nnoremap ; :
 inoremap wq <esc>
-" Map l to up, k to down
-noremap l k
-noremap k j
-noremap H l
+
 " Enter insert after word
 map <leader>e ea
 
 " notes
 map <leader>n :set ft=notes<cr>
+
+" Movement
+map <Up> <nop>
+map <Down> <nop>
+map <Left> <nop>
+map <Right> <nop>
+
+" left/up/down/right
+" Added the 'g' in front of 'j' and 'k' for visual line navigation.
+noremap l k
+nnoremap l gk
+noremap k j
+nnoremap k gj
+noremap e l

@@ -16,7 +16,7 @@ set backspace=2
 set directory=/tmp/ 
 set tags=tags;
 set autochdir
-
+set nofoldenable " disable folding
 let mapleader = ","
 
 "" Line handling
@@ -30,10 +30,6 @@ set nolist
 set nobackup
 set nowb
 set noswapfile
-
-" Movement
-map j gj
-map k gk
 
 " more natural splits by default
 set splitbelow
