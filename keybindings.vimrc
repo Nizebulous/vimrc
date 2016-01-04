@@ -42,7 +42,7 @@ nnoremap ; :
 inoremap wq <esc>
 
 " Enter insert after word
-map <leader>e ea
+map <leader>e &a
 
 " notes
 map <leader>n :set ft=notes<cr>
