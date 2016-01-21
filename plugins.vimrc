@@ -37,7 +37,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'blueyed/vim-diminactive' " dim inactive pane
 Plug 'itchyny/lightline.vim'
 Plug 'luochen1990/rainbow' " parenthesis highlighting
-Plug 'mkarmona/colorsbox' 
+Plug 'kocakosm/hilal'
+Plug 'gerw/vim-HiLinkTrace'
 
 " Syntaxes
 Plug 'chase/vim-ansible-yaml'
@@ -62,5 +63,5 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'guns/vim-clojure-highlight'
 Plug 'guns/vim-clojure-static'
 Plug 'guns/vim-sexp'
-Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'tpope/vim-fireplace'
