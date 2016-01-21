@@ -39,6 +39,7 @@ noremap <leader>9 :RopeAutoImport<cr>
 noremap <leader>- :RopeOrganizeImports<cr>
 
 nnoremap ; :
+nnoremap \ ;
 inoremap wq <esc>
 
 " Enter insert after word
