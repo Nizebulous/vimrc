@@ -19,7 +19,7 @@ set ttyfast
 set equalalways
 
 let g:rainbow_guifgs = [ '#2c89a9', '#7acab0', '#ffaa88', '#28a0e0' ]
-let g:rainbow_ctermfgs = [ '166', 'red', 'magenta', 'blue' ]
+let g:rainbow_ctermfgs = [ 'lightcyan', 'blue', 'darkblue', 'lightblue' ]
 
 if !exists('g:rainbow_conf')
    let g:rainbow_conf = {}

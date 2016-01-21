@@ -37,7 +37,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'blueyed/vim-diminactive' " dim inactive pane
 Plug 'itchyny/lightline.vim'
 Plug 'luochen1990/rainbow' " parenthesis highlighting
-Plug 'kocakosm/hilal'
+Plug 'subsetpark/hilal'
 Plug 'gerw/vim-HiLinkTrace'
 
 " Syntaxes
