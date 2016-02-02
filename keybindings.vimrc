@@ -57,7 +57,7 @@ map <Right> <nop>
 " left/up/down/right
 " Added the 'g' in front of 'j' and 'k' for visual line navigation.
 noremap l k
-nnoremap l gk
+" nnoremap l gk
 noremap k j
-nnoremap k gj
+" nnoremap k gj
 noremap e l
